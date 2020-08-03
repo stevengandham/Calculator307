@@ -13,7 +13,8 @@ public class Model {
 			if (y == 0)
 				return 0;
 			return x / y;
-			
+		case "log":
+			return java.lang.Math.log10(y);
 		default:
 			return 0;
 		}
