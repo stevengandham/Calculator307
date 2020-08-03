@@ -1,0 +1,10 @@
+language: java
+jdk:
+  -openjdk8
+addons:
+  sonarcloud:
+    organization: stevengandham
+    token: fc936d4be0f050500ac866e77064e418d1d9fd35
+    script:
+      -ant build
+      -sonar-scanner
